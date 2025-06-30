@@ -1,0 +1,44 @@
+{
+  "name": "senior-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://TU_USUARIO_GITHUB.github.io/NOMBRE_DE_TU_REPOSITORIO", // <-- ¡Asegúrate que esta línea esté y tenga coma al final!
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": { // <-- ¡Asegúrate que esta sección esté!
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject", // <-- ¡Esta línea debe terminar con coma!
+    "predeploy": "npm run build",   // <-- ¡Esta línea debe terminar con coma!
+    "deploy": "gh-pages -d build"   // <-- ¡Esta es la última línea del objeto, NO debe llevar coma al final!
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1" // <-- Asegúrate de que gh-pages esté aquí y la coma sea correcta.
+  }
+}
